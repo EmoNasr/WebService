@@ -6,10 +6,10 @@ import jakarta.jws.WebService;
 
 import java.util.List;
 
-@WebService(serviceName = "Converter")
+@WebService(serviceName = "ConverterWS")
 public class Converter {
 
-    @WebMethod(operationName = "Covert")
+    @WebMethod(operationName = "Convert")
     public double conversion(@WebParam(name = "value") double mt){
         return mt*11;
     }
